@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:ital,wght@0,200;0,500;1,100&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+
+
+:root{
+    --font-primaria: "Playfair Display",serif;
+    --font-secundaria: "Poppins",serif;
+}
+
+
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: #303030
+}
+
+header{
+    width: 100%;
+    height: 25vh;
+    overflow: visible;
+}
+
+.menu{
+    display: flex;
+    height: 25vh;
+    align-items: center;
+}
+
+.menu-inicial{
+    margin-left: 20%;
+    width: 25rem;
+    
+}
+.logo{
+    margin-left: 2%;
+    cursor: pointer;
+    transition: opacity 2s,transform 3s;
+}
+.logo:hover{
+    opacity: 50%;
+    transform: scale(1.2);
+}
+
+.opcoes-menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.opcoes{
+    margin: 0.5rem;
+   
+}
+
+.texto:hover{
+    font-size: .8rem;
+    color: #f1f1f1 ;
+}
+
+.texto{
+    font-family: var(--font-secundaria);
+    font-size: .6rem;
+    color: #d8d6d6;
+    transition: all 1s;
+}
+
+.pesquisa{
+    margin-left: 4em;
+    margin-right: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    min-width: 1rem;
+    height: 1rem;
+    border-radius: 100px;
+
+    padding: 5px 5px;
+    background-color:#504f4f;
+    color: #f1f1f1;
+
+
+
+}
+
+.pesquisa > input {
+     width: 0rem;
+     background-color:#504f4f;
+     border: none;
+     outline: none;
+     color: #f1f1f1;
+     transition: all 2s 0.5s;
+     
+}
+
+.pesquisa:hover >input{
+    width: 5rem;
+}
+
+.pesquisa > label {
+    cursor: pointer;
+    font-size: 0.5rem;
+    padding: 0.5;
+}
+
+.pesquisa:hover > label{
+    padding: 0;;
+}
+
+.login{
+
+    width: 12rem;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-secundaria);
+}
+
+.lg-up{
+    width: 5rem;
+    height: 2rem;
+    background-color: #ffcb2b;
+    color: #303030;
+
+    border-radius: 50px;
+    border-style: none;
+    cursor: pointer;
+}
+
+#label-btn{
+    color: #d8d6d6;
+    padding: 2rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 300;
+
+}
