@@ -13,6 +13,8 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    background-position: center;
+    background-size:auto;
 }
 
 body{
@@ -23,7 +25,7 @@ body{
 header{
     width: 100vw;
     height: 25vh;
-
+    
 }
 
 /*Inicio Estilo Menu*/
@@ -138,6 +140,8 @@ header{
     max-width: 200px;
     width: 15%;
     margin-left:5%;
+    float: left;
+    margin-right: auto;
 
     display: flex;
     align-items: center;
@@ -172,25 +176,82 @@ header{
 
 }
 
-.exemplos-pratos{
-    width: 400px;
-    
-    max-height: 400px;
-    
-    position: relative;
-  
-    margin-right: 20px;
-    background-color: #ffcb2b;
-}
-
-
-@media{
-
-
-
-}
 
 /*fim botões de login*/
 
 /*Fim estilo Menu*/
 /*Fim estilo header*/
+
+
+
+
+/*inicio section conteudos*/
+
+.conteudos{
+    height: 60vh;
+    width: 100%;
+}
+
+
+/*inicio slidshow*/
+
+.exemplos-pratos{
+    max-height: 600px;
+    height: 100%;
+    width: 40%;
+    max-width:400px ;
+ 
+
+    float: right;
+    margin-right: 10px;
+    opacity: 0.8;
+}
+
+#container-pratos{
+    transition: 2s; 
+    width: 100%;
+    height: 100%;
+   
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+
+
+/*inicio botões de transição*/
+#btn-img{
+    width: 100px;
+    height: 20px;
+
+    margin-top: 20px;
+    float: right;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+
+#btn-img > li{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color:#191919;
+    border-color: #131111;
+    border:10px;
+
+    transition: all 1s;
+}
+
+#btn-img>li:hover{
+    width: 15px;
+    height: 15px;
+    background-color: #fe5244;
+
+}
+
+
+
+/*fim botões de transição*/
+/*fim section conteudos*/
