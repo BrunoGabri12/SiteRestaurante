@@ -19,88 +19,108 @@ body{
     background-color: #303030
 }
 
+/* inicio estilo header */
 header{
-    width: 100%;
+    width: 100vw;
     height: 25vh;
-    overflow: visible;
+
 }
 
+/*Inicio Estilo Menu*/
 .menu{
-    display: flex;
-    height: 25vh;
+    height: 100%;
+    width: 100%;
     align-items: center;
+    display: flex;
+
 }
 
-.menu-inicial{
-    margin-left: 20%;
-    width: 25rem;
-    
-}
+/*inicio logo*/
 .logo{
     margin-left: 2%;
+    margin-right: 2%;
     cursor: pointer;
     transition: opacity 2s,transform 3s;
 }
 .logo:hover{
     opacity: 50%;
-    transform: scale(1.2);
+    transform: scale(1.1);
+}
+/*Fim logo*/
+
+
+/*Inicio menu inicial e opções*/
+
+.menu-inicial{
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 500px;
+    width: 35%;
 }
 
 .opcoes-menu{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .opcoes{
-    margin: 0.5rem;
+    margin: 1rem;
    
 }
 
-.texto:hover{
+.texto-menu:hover{
     font-size: .8rem;
     color: #f1f1f1 ;
 }
 
-.texto{
+.texto-menu{
     font-family: var(--font-secundaria);
     font-size: .6rem;
     color: #d8d6d6;
     transition: all 1s;
 }
 
+/*Fim menu inicial e opções*/
+
+/*Inicio barra de pesquisa*/
 .pesquisa{
-    margin-left: 4em;
-    margin-right: 5rem;
+    margin-right: 10%;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+
     
     min-width: 1rem;
-    height: 1rem;
+    height: 15px;
+
     border-radius: 100px;
 
     padding: 5px 5px;
     background-color:#504f4f;
-    color: #f1f1f1;
-
-
+    color: #f1f1f1
 
 }
 
 .pesquisa > input {
-     width: 0rem;
+     width: 0px;
      background-color:#504f4f;
      border: none;
      outline: none;
      color: #f1f1f1;
-     transition: all 2s 0.5s;
+     transition: 2s 0.5s;
      
 }
 
 .pesquisa:hover >input{
-    width: 5rem;
+
+    width: 65px;
+    height: 15px;
+    padding: 5px 5px;
+    border-radius: 100px;
+  
+
 }
 
 .pesquisa > label {
@@ -109,36 +129,68 @@ header{
     padding: 0.5;
 }
 
-.pesquisa:hover > label{
-    padding: 0;;
-}
 
-.login{
+/*Fim barra de pesquisa*/
 
-    width: 12rem;
-    margin-left: 10%;
+
+/*Inicio botões de login*/
+.login{ /*campo de login*/
+    max-width: 200px;
+    width: 15%;
+    margin-left:5%;
+
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content:space-around;
+
     font-family: var(--font-secundaria);
+    white-space: nowrap;
+
+    padding:1%;
 }
 
-.lg-up{
+.lg-up{ /*sign-in*/
     width: 5rem;
     height: 2rem;
     background-color: #ffcb2b;
-    color: #303030;
+    color: #131111;
 
     border-radius: 50px;
     border-style: none;
     cursor: pointer;
+
+
+    padding-left: 2px;
 }
 
-#label-btn{
+#label-btn{ /*sign-up*/
     color: #d8d6d6;
-    padding: 2rem;
+    padding: 2px;
     cursor: pointer;
     font-size: 0.9rem;
     font-weight: 300;
 
 }
+
+.exemplos-pratos{
+    width: 400px;
+    
+    max-height: 400px;
+    
+    position: relative;
+  
+    margin-right: 20px;
+    background-color: #ffcb2b;
+}
+
+
+@media{
+
+
+
+}
+
+/*fim botões de login*/
+
+/*Fim estilo Menu*/
+/*Fim estilo header*/
